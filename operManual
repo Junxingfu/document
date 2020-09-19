@@ -1,0 +1,64 @@
+
+1.jdk安装
+https://www.djc8.cn/archives/deep-install-jdk18.html
+https://blog.csdn.net/qq_41892229/article/details/81773079
+
+2.第一次安装系统提示 su:鉴定故障
+https://blog.csdn.net/qq_22017379/article/details/103623194
+
+3.git 安装
+https://blog.csdn.net/weixin_43242942/article/details/88191971
+https://blog.csdn.net/weixin_34162401/article/details/93010632
+本人安装，添加依赖：
+git 解压到 /usr/local/下
+-->cd /usr/local/git-2.28.0
+-->./configure --prefix=/usr/local/git-2.28.0 && make && make install
+-->vim /etc/profile并添加 export PATH=/usr/local/git-2.28.0/bin:$PATH
+-->source /etc/profile
+-->vim /etc/bash.bashrc并添加 export PATH=/usr/local/git-2.28.0/bin:$PATH
+-->source /etc/bash.bashrc
+-->git --version
+配置如下：
+git config --global user.name "jxfu"
+git config --global user.email "jxfu@qq.com"
+
+
+3.linux 中没有ll
+https://blog.csdn.net/Let_me_tell_you/article/details/80850428
+cp ~/.bashrc ~/.bashrc.backup
+vim ~/.bashrc
+
+4.maven安装
+https://blog.csdn.net/c0411034/article/details/87341681
+解压到 /usr/local/下
+-->/usr/local/apache-maven-3.6.3
+-->vim /etc/profile并添加    export MAVEN=/usr/local/apache-maven-3.6.3
+                            export PATH=${MAVEN}/bin:$PATH
+-->source /etc/profile
+-->vim /etc/bash.bashrc并添加export MAVEN=/usr/local/apache-maven-3.6.3
+                            export PATH=${MAVEN}/bin:$PATH
+-->source /etc/bash.bashrc
+-->mvn --version
+
+5.移动命令
+-v, --verbose : 详细显示进行的步骤
+-b : 类似–backup 但不接受参数
+-f, --force : 覆盖前不询问
+
+改名 mv -v a.txt b.txt
+    mv dir1 dir2
+覆盖 mv -vf  b.txt a.txt
+    覆盖前会备份 mv -bv a.txt b.txt
+移动 mv *.txt dir1/
+    目录移动 mv -v dir1 dir2 （‘dir1’ -> ‘dir2/dir1’）
+
+6.docker安装
+首先看deepin15.11版本是基于 debian哪个版本（9.0--stretch）
+https://blog.csdn.net/u013310075/article/details/104003437
+https://www.cnblogs.com/jackyyou/p/5498083.html （涉及到用户组的添加）
+https://blog.csdn.net/u013948858/article/details/78429954
+
+涉及阿里云镜像加速-->容器镜像服务-->
+
+7.文件夹创建命令
+mkdir -p /home/jxfu/tt/aa 即使tt不存在也可以递归创建
