@@ -54,6 +54,7 @@ https://blog.csdn.net/c0411034/article/details/87341681
 移动 mv *.txt dir1/
     目录移动 mv -v dir1 dir2 （‘dir1’ -> ‘dir2/dir1’）
 
+
 6.docker安装
 首先看deepin15.11版本是基于 debian哪个版本（9.0--stretch）
 https://blog.csdn.net/u013310075/article/details/104003437
