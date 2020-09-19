@@ -21,6 +21,8 @@ git 解压到 /usr/local/下
 配置如下：
 git config --global user.name "jxfu"
 git config --global user.email "jxfu@qq.com"
+登录github，设置ssh（设置命令在github中有提供）参考下面文档
+https://blog.csdn.net/qq_42690368/article/details/82319238，本地git init，git commit，git remote add origin ~~~,
 
 
 3.linux 中没有ll
