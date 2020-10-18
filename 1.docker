@@ -14,3 +14,9 @@ service docker stop
 
 查看是否启动成功
 docker ps -a
+
+2.信息查看
+docker version
+docker info
+docker --help
+
